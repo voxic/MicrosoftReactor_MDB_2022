@@ -37,7 +37,7 @@ function App() {
         redirect: 'follow'
       };
     
-      fetch("https://westeurope.azure.data.mongodb-api.com/app/application-0-lunyi/endpoint/search?search="+searchInputRef.current.value, requestOptions)
+      fetch("<<<REPLACE WITH BACKEND URL>>>?search="+searchInputRef.current.value, requestOptions)
         .then(response => response.json())
         .then(result => {
           setPokemons(result)
